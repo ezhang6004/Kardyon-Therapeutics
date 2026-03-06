@@ -3313,4 +3313,74 @@
 							margin-bottom: 2em;
 						}
 
+@media screen and (max-width: 736px) {
+
+  /* Give the mobile header more controlled spacing */
+  #header {
+    padding-top: 4.5em;
+  }
+
+  body.homepage #header {
+    padding: 6.5em 0 4em 0;
+  }
+
+  /* Make logo smaller and keep it out of the way */
+  .site-logo-wrapper {
+    position: absolute;
+    top: 0.9rem;
+    left: 1rem;
+    z-index: 10000;
+    max-width: calc(100vw - 110px); /* leaves room for centered menu button */
+  }
+
+  .site-logo-wrapper img {
+    height: 42px;
+    width: auto;
+    display: block;
+  }
+
+  /* Make the top dark bar tall enough for logo + button */
+  #header .header-overlay {
+    height: 72px;
+  }
+
+  /* Prevent title from starting too high */
+  #header .inner {
+    margin-top: 0;
+    padding-top: 1.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  /* Slightly reduce hero text size on mobile */
+  #header h1,
+  body.homepage #header h1 {
+    font-size: 2.2em;
+    line-height: 1.1em;
+  }
+
+  #header header > p {
+    font-size: 1em;
+  }
+
+  /* Move the hamburger to the right instead of center */
+  #navButton {
+    width: 64px;
+    left: auto;
+    right: 0.5rem;
+    top: 0.5rem;
+    height: 44px;
+  }
+
+  #navButton .toggle:before {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 0.35em;
+  }
+}
+
 		}
